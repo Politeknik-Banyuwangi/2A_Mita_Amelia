@@ -71,6 +71,7 @@ class MovieController extends Controller
         ->json()['results'];
 
 //         dump($movie);
+        // show detail pada web
         return view('movie.show', [
             'movie' => $movie,
             'movieRecommendations' => $movieRecommendations
